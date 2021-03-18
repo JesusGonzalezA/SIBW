@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/jpg" href="./assets/logo.jpg" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/cover.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/aside.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/animate.css" />
+    <link rel="stylesheet" href="./styles/components/buttons.css" />
+    <link rel="stylesheet" href="./styles/components/card.css" />
+    <link rel="stylesheet" href="./styles/components/divider.css" />
+    <link rel="stylesheet" href="./styles/components/nav-bar.css" />
+    
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+        crossorigin="anonymous" 
+    />
+    <title>Calendario de senderismo</title>
+</head>
+<body class="grid-container">
+
+    <!--Cover-->
+    <div id="cover">
+        <div class="quote-container">
+            <blockquote>
+                Descubre una nueva experiencia
+            </blockquote>
+        </div>
+
+        <!-- Go down button -->
+        <div id="div-button-down" class="animate-infinite-up-down">
+            <button 
+                onclick="topFunction()" 
+                title="Ir a la página"
+                class="btn go-down-button"
+            >
+            <i class="fas fa-arrow-down "></i>
+            </button>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header class="mbbbb">
+        <div class="title-section pp">
+            <img 
+                loading="lazy"
+                class="rounded mrrr"
+                src="./assets/logo.jpg"
+                alt="Logo"
+            />
+            <h1>Calendario <wbr> de&nbsp;senderismo</h1>
+        </div>
+        
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="./index.html">
+                        <i class="fas fa-home icon"></i>
+                        Página principal
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/evento.html">
+                        <i class="far fa-calendar-alt"></i>
+                        Próximas excursiones
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="https://www.linkedin.com/in/jesusgonzalezalvarez/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                        &nbsp;Acerca del autor
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main routes-->
+    <main>
+
+        <!--Title-->
+        <div class="text-center">
+            <h2>Rutas</h2><br>
+        </div>
+
+        <!--Cards-->
+        <div class="card-container">
+
+            <!--1-Card-->
+            <a title="Los cahorros" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Los cahorros
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/cahorros.jpg"
+                        alt="Los cahorros"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Mayo
+                    </p>
+                </div>
+            </a>
+
+            <!--2-Card-->
+            <a title="Alhama de Granada" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Alhama de Granada
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/alhama.jpg"
+                        alt="Alhama de Granada"
+                    />
+                    <p>
+                        <b>Fecha:</b> 31 de Mayo
+                    </p>
+                </div>
+            </a>
+
+            <!--3-Card-->
+            <a title="Alicún" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Alicún
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/alicun.jpg"
+                        alt="Alicún"
+                    />
+                    <p>
+                        <b>Fecha:</b> 1 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--4-Card-->
+            <a title="Camino mozárabe" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Camino mozárabe
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/camino-mozarabe.jpeg"
+                        alt="Camino mozárabe"
+                    />
+                    <p>
+                        <b>Fecha:</b> 2 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--5-Card-->
+            <a title="Canal Espartera" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Canal Espartera
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/canal-espartera.jpg"
+                        alt="Canal Espartera"
+                    />
+                    <p>
+                        <b>Fecha:</b> 10 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--6-Card-->
+            <a title="Cerrada del río castril" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Cerrada del río castril
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/cerrada-rio-castril.jpg"
+                        alt="Cerrada del río castril"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--7-Card-->
+            <a title="Cerro del buitre" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Cerro del buitre
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/cerro-buitre.jpg"
+                        alt="Cerro del buitre"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--8-Card-->
+            <a title="Cerro huenes" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Cerro huenes
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/cerro-huenes.jpg"
+                        alt="Cerro huenes"
+                    />
+                    <p>
+                        <b>Fecha:</b> 17 de Junio
+                    </p>
+                </div>
+            </a>
+
+            <!--9-Card-->
+            <a title="Circular atalaya" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Circular atalaya
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/circular-atalaya.jpg"
+                        alt="Circular atalaya"
+                    />
+                    <p>
+                        <b>Fecha:</b> 1 de Julio
+                    </p>
+                </div>
+            </a>
+
+            <!--10-Card-->
+            <a title="Circular de Lanjarón" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Circular de Lanjarón
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/cahorros.jpg"
+                        alt="Circular de Lanjarón"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Julio
+                    </p>
+                </div>
+            </a>
+
+            <!--11-Card-->
+            <a title="Pino Señora" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Pino Señora
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/pino-señora.jpg"
+                        alt="Pino Señora"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Agosto
+                    </p>
+                </div>
+            </a>
+
+            <!--12-Card-->
+            <a title="Sierra de la Alfaguara" href="./pages/evento.html">
+                <div class="card animate fadeIn text-center">
+                    <h3>
+                        Sierra de la Alfaguara
+                    </h3>
+                    <img
+                        loading="lazy"
+                        src="./assets/places/sierra-alfaguara.jpg"
+                        alt="Sierra de la Alfaguara"
+                    />
+                    <p>
+                        <b>Fecha:</b> 15 de Septiembre
+                    </p>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="text-center mttt ppppp">
+            <button class="btn btn-more btn-block">
+                Ver más
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Web map -->
+    <aside class="text-center">
+        <div class="pl pr">
+            <h2>¡Valora tus últimas rutas para tener una mejor experiencia!</h2>
+        </div>
+        
+        <div class="card animate fadeIn card-rate">
+            <h3>
+                Pino Señora
+            </h3>
+            <img
+                loading="lazy"
+                src="./assets/places/pino-señora.jpg"
+                alt="`Pino Señora"
+            />
+            <p>
+                <b>Fecha:</b> Ayer
+            </p>
+
+            <div class="rating mbbb">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+            </div>
+        </div>
+
+        <div class="card animate fadeIn card-rate">
+            <h3>
+                Sierra de la Alfaguara
+            </h3>
+            <img
+                loading="lazy"
+                src="./assets/places/sierra-alfaguara.jpg"
+                alt="Sierra de la Alfaguara"
+            />
+            <p>
+                <b>Fecha:</b> Hace 15 días
+            </p>
+
+            <div class="rating mbbb">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+            </div>
+        </div>
+
+        <div class="mttt ppp">
+            <button class="btn btn-more btn-block">
+                Ver más
+            </button>
+        </div>
+    </aside>
+
+    <!-- Go up button -->
+    <button 
+        id="up-button"
+        onclick="topFunction()" 
+        title="Ir arriba"
+        class="op-primary btn fab-button btn-rounded"
+    >
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!--Footer-->
+    <footer class="mttt mbbb">
+
+        <hr class="divider linear-gradient height-3" />
+
+        <p class="text-center">
+            Desarrollado por 
+            <a 
+                class="url"
+                href="https://github.com/JesusGonzalezA"
+                target="_blank"
+            ><i class="fab fa-github"></i>&nbsp;JesusGonzalezA</a> para SIBW
+        </p>
+    </footer>
+
+<script>
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
+
+//Get the button
+const upButton = document.getElementById("up-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onload = () => { scrollFunction() };
+window.onscroll = () => { scrollFunction() };
+
+const scrollFunction = () => {
+    let style = "none";
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+        style = "block";
+
+    upButton.style.display = style;
+}
+
+// When the user clicks on the button, scroll to the top of the document
+const topFunction = () => {
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+    document.body.scrollTop = vh;
+    document.documentElement.scrollTop = vh;
+}
+</script>
+</body>
+</html>
