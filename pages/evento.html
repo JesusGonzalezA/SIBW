@@ -190,7 +190,6 @@
     <!-- Go up button -->
     <button 
         id="up-button"
-        onclick="topFunction()" 
         title="Ir arriba"
         class="op-primary btn fab-button btn-rounded"
     >
@@ -211,31 +210,6 @@
             ><i class="fab fa-github"></i>&nbsp;JesusGonzalezA</a> para SIBW
         </p>
     </footer>
-
-<script>
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
-
-//Get the button
-const upButton = document.getElementById("up-button");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onload = () => { scrollFunction() };
-window.onscroll = () => { scrollFunction() };
-
-const scrollFunction = () => {
-    let style = "none";
-
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
-        style = "block";
-
-    upButton.style.display = style;
-}
-
-// When the user clicks on the button, scroll to the top of the document
-const topFunction = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
+<script type="module" src="../src/goTopButton.js"></script>
 </body>
 </html>

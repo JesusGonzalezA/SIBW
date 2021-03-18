@@ -39,7 +39,7 @@
         <!-- Go down button -->
         <div id="div-button-down" class="animate-infinite-up-down">
             <button 
-                onclick="topFunction()" 
+                id="down-button" 
                 title="Ir a la página"
                 class="btn go-down-button"
             >
@@ -373,7 +373,6 @@
     <!-- Go up button -->
     <button 
         id="up-button"
-        onclick="topFunction()" 
         title="Ir arriba"
         class="op-primary btn fab-button btn-rounded"
     >
@@ -395,32 +394,7 @@
         </p>
     </footer>
 
-<script>
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
-
-//Get the button
-const upButton = document.getElementById("up-button");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onload = () => { scrollFunction() };
-window.onscroll = () => { scrollFunction() };
-
-const scrollFunction = () => {
-    let style = "none";
-
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
-        style = "block";
-
-    upButton.style.display = style;
-}
-
-// When the user clicks on the button, scroll to the top of the document
-const topFunction = () => {
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-
-    document.body.scrollTop = vh;
-    document.documentElement.scrollTop = vh;
-}
-</script>
+<script type="module" src="./src/goUpButton.js"></script>
+<script type="module" src="./src/goDownButton.js"></script>
 </body>
 </html>
