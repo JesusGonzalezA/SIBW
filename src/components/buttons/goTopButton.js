@@ -1,4 +1,4 @@
-import { goUp } from './goToFunctions.js';
+import { goTop } from '../../helpers/goToFunctions.js';
 
 //Get the button
 const upButton = document.getElementById("up-button");
@@ -17,4 +17,4 @@ const scrollFunction = () => {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-upButton.addEventListener('click', goUp);
+upButton.addEventListener('click', goTop );

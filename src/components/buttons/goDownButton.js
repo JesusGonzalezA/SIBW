@@ -1,4 +1,4 @@
-import { goUp } from './goToFunctions.js';
+import { goUp } from '../../helpers/goToFunctions.js';
 
 //Get the button
 const downButton = document.getElementById("down-button");
