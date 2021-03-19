@@ -5,6 +5,7 @@ const addButton = document.getElementById('add-comment-button');
 const modal = document.getElementById('modal-form-comment');
 const addCommentForm = document.getElementById('add-comment-form');
 const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
 const commentInput = document.getElementById('comment');
 const comments = document.getElementById('comments');
 
@@ -56,7 +57,6 @@ addCommentForm.onsubmit = (e) => {
     modal.style.display = "none";
 
     const date = new Date();
-
     const comment = document.createElement("div");
     comment.classList.add("comment");
     
@@ -88,4 +88,10 @@ addCommentForm.onsubmit = (e) => {
     comment.appendChild(commentContent);
 
     comments.appendChild(comment);
+
+    //--------------------------------------------------------------------------
+    alert("Su reseña ha sido enviada con éxito");
+    nameInput.value = "";
+    emailInput.value = "";
+    commentInput.value = "";
 }
