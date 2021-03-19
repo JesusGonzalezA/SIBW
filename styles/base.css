@@ -23,6 +23,16 @@ body {
   --op-primary: #55443e;
   --bootstrap-primary: #0069D9;
   --bootstrap-primary-hover: #0155af;
+  
+  --bootstrap-info: #138496;
+  --bootstrap-info-hover: #0b6d7c;
+
+  --bootstrap-danger: #da1c2f;
+  --bootstrap-danger-hover: #C82333;
+
+  --bootstrap-success: #24a13f;
+  --bootstrap-success-hover: #218838;
+
 }
 
 /* Sizes */
@@ -64,6 +74,10 @@ a.url:hover {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .rounded {
   border-radius: 50%;
 }
@@ -76,8 +90,25 @@ a.url:hover {
 .shadow {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
-/******************************************************************************/
 
+/******************************************************************************/
+.display-none {
+  display: none;
+}
+/******************************************************************************/
+.flex-container{
+  display: flex;
+}
+
+.flex-25 {
+  flex: 1;
+}
+
+.flex-75 {
+  flex: 2;
+}
+
+/******************************************************************************/
 /* Padding */
 .p-0 {
   padding: 0px;
