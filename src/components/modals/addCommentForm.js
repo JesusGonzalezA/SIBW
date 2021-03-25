@@ -25,6 +25,20 @@ closeButton.onclick = () => {
     modal.style.display = "none";
 }
 
+
+//**************************************************************************
+
+const validateFields = () => {
+    
+
+    if ( nameInput.value === "" || emailInput.value === "" || commentInput.value === "" )
+        return false;
+    
+    const re = /\S+@\S+\.\S+/;    
+    
+    return re.test(emailInput.value);
+}
+
 //**************************************************************************
 // Banned comment
 
@@ -52,7 +66,14 @@ commentInput.onkeyup = validateComment;
 //**************************************************************************
 // Submit comment
 addCommentForm.onsubmit = (e) => {
+    
     e.preventDefault();
+
+    if ( !validateFields() )
+    {
+        alert("Ha introducido los datos mal.");
+        return;
+    }
 
     modal.style.display = "none";
 
